@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Tests made for J. Law. Cordova's static web app resume. Part of the Cloud Resume Challenge (AWS Edition).",
   "main": "index.ts",
-  "scripts": {},
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run"
+  },
   "author": "J. Law. Cordova",
   "license": "ISC",
   "devDependencies": {
