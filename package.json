@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "cypress:open": "cypress open",
-    "cy:run": "cypress run"
+    "cypress:run": "cypress run"
   },
   "author": "J. Law. Cordova",
   "license": "ISC",
