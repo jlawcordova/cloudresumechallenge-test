@@ -2,7 +2,7 @@
 
 describe("Resume", () => {
   beforeEach(() => {
-    cy.visit("https://resume.jlawcordova.com");
+    cy.visit("/");
   });
 
   it("should contain the name of the resume owner", () => {
@@ -17,7 +17,7 @@ describe("Resume", () => {
     });
 
     // Revisit the same page to increase the view count.
-    cy.visit("https://resume.jlawcordova.com");
+    cy.visit("/");
     cy.get(".view-count").then((content) => {
       var newViewCount = parseInt(content[0].innerText.split(" ")[0]);
       cy.wrap(newViewCount).should("be.greaterThan", viewCount);
